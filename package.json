@@ -1,24 +1,35 @@
 {
     "name": "nggm",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",
-        "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e"
     },
-    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/demensky/nggm.git"
+    },
+    "keywords": ["ng", "angular", "googlemaps", "google", "maps"],
+    "homepage": "https://github.com/demensky/nggm",
+    "bugs": {
+        "url": "https://github.com/demensky/nggm/issues"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Dmitry Demensky",
+        "email": "dmitry@demensky.com",
+        "url": "https://demensky.github.io/"
+    },
     "dependencies": {
         "@types/googlemaps": "^3.37.0"
     },
     "peerDependencies": {
-        "@angular/common": "^8.1.2",
         "@angular/core": "^8.1.2"
     },
     "devDependencies": {
-        "@angular/common": "^8.1.2",
         "@angular/core": "^8.1.2",
         "@angular/platform-browser": "~8.1.2",
         "@angular/platform-browser-dynamic": "~8.1.2",
