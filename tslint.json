@@ -3,6 +3,8 @@
     "extends": "tslint:recommended",
     "rulesDirectory": ["codelyzer"],
     "rules": {
+        "directive-selector": [true, "attribute", "gm", "camelCase"],
+        "component-selector": [true, "element", "gm", "kebab-case"],
         "array-type": false,
         "arrow-parens": false,
         "deprecation": {
