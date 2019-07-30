@@ -13,6 +13,11 @@
         "target": "es2015",
         "typeRoots": ["node_modules/@types"],
         "lib": ["es2018", "dom"],
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
         "paths": {
             "nggm": ["dist/nggm"],
             "nggm/*": ["dist/nggm/*"]
