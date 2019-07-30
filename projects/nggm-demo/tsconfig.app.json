@@ -4,9 +4,5 @@
         "outDir": "../../out-tsc/app",
         "types": ["googlemaps"]
     },
-    "include": ["src/**/*.ts"],
-    "exclude": ["src/test.ts", "src/**/*.spec.ts"],
-    "angularCompilerOptions": {
-        "enableIvy": true
-    }
+    "include": ["src/**/*.ts"]
 }

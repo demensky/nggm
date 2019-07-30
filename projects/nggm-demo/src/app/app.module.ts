@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {GmCommonModule, GmMapModule} from 'nggm';
+import {GmCommonModule} from '../../../../src/lib/common/gm-common.module';
+import {GmMapModule} from '../../../../src/lib/map/gm-map.module';
 
 import {AppComponent} from './app.component';
 

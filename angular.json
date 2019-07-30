@@ -44,7 +44,7 @@
                         "main": "projects/nggm-demo/src/main.ts",
                         "polyfills": "projects/nggm-demo/src/polyfills.ts",
                         "tsConfig": "projects/nggm-demo/tsconfig.app.json",
-                        "aot": true,
+                        "aot": false,
                         "assets": [
                             "projects/nggm-demo/src/favicon.ico",
                             "projects/nggm-demo/src/assets"
