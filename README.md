@@ -1,6 +1,6 @@
 # `nggm` (under construction)
 
-Just [Maps JavaScript API][maps-js-api] wrapper.
+Just [Maps JavaScript API][maps-js-api] wrapper for use with Angular.
 
 [maps-js-api]:
     https://developers.google.com/maps/documentation/javascript/reference/
