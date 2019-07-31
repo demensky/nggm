@@ -1,18 +1,18 @@
 import {NgModule} from '@angular/core';
-import {GmInfoWindowEventCloseclickDirective} from './gm-info-window-event-closeclick.directive';
+import {GmInfoWindowCloseclickDirective} from './accessors/gm-info-window-closeclick.directive';
+import {GmInfoWindowPositionDirective} from './accessors/gm-info-window-position.directive';
 import {GmInfoWindowComponent} from './gm-info-window.component';
-import {GmInfoWindowPositionValueDirective} from './values/gm-info-window-position-value.directive';
 
 @NgModule({
     declarations: [
-        GmInfoWindowEventCloseclickDirective,
+        GmInfoWindowCloseclickDirective,
+        GmInfoWindowPositionDirective,
         GmInfoWindowComponent,
-        GmInfoWindowPositionValueDirective,
     ],
     exports: [
-        GmInfoWindowEventCloseclickDirective,
+        GmInfoWindowCloseclickDirective,
+        GmInfoWindowPositionDirective,
         GmInfoWindowComponent,
-        GmInfoWindowPositionValueDirective,
     ],
 })
 export class GmInfoWindowModule {}

@@ -1,24 +1,24 @@
 import {NgModule} from '@angular/core';
-import {GmMapEventClickDirective} from './gm-map-event-click.directive';
+import {GmMapCenterDirective} from './accessors/gm-map-center.directive';
+import {GmMapClickDirective} from './accessors/gm-map-click.directive';
+import {GmMapDraggableDirective} from './accessors/gm-map-draggable.directive';
+import {GmMapZoomDirective} from './accessors/gm-map-zoom.directive';
 import {GmMapComponent} from './gm-map.component';
-import {GmMapCenterValueDirective} from './values/gm-map-center-value.directive';
-import {GmMapDraggableValueDirective} from './values/gm-map-draggable-value.directive';
-import {GmMapZoomValueDirective} from './values/gm-map-zoom-value.directive';
 
 @NgModule({
     declarations: [
-        GmMapCenterValueDirective,
-        GmMapEventClickDirective,
+        GmMapCenterDirective,
+        GmMapClickDirective,
+        GmMapDraggableDirective,
+        GmMapZoomDirective,
         GmMapComponent,
-        GmMapDraggableValueDirective,
-        GmMapZoomValueDirective,
     ],
     exports: [
-        GmMapCenterValueDirective,
-        GmMapEventClickDirective,
+        GmMapCenterDirective,
+        GmMapClickDirective,
+        GmMapDraggableDirective,
+        GmMapZoomDirective,
         GmMapComponent,
-        GmMapDraggableValueDirective,
-        GmMapZoomValueDirective,
     ],
 })
 export class GmMapModule {}
