@@ -62,25 +62,25 @@ You can use **any** [`Map`] methods with [template reference variables].
 
 <!-- TODO: all options -->
 
-| Directive                  | [`MapOptions`]                | [`Map`]                                                                                |
-| :------------------------- | :---------------------------- | :------------------------------------------------------------------------------------- |
-| `[(gmCenter)]`             | [`MapOptions.center`]         | ~~[`Map.getCenter`]~~, ~~[`Map.setCenter`]~~, [`Map.center_changed`]                   |
-| ~~`[(gmClickableIcons)]`~~ | [`MapOptions.clickableIcons`] | ~~[`Map.getClickableIcons`]~~, ~~[`Map.setClickableIcons`]~~, `clickableicons_changed` |
-| `[(gmDraggable)]`          | [`MapOptions.draggable`]      | `draggable_change`                                                                     |
-| ~~`[(gmHeading)]`~~        | [`MapOptions.heading`]        | ~~[`Map.getHeading`]~~, ~~[`Map.setHeading`]~~, [`Map.heading_changed`]                |
-| ~~`[(gmMapTypeId)]`~~      | [`MapOptions.mapTypeId`]      | ~~[`Map.getMapTypeId`]~~, ~~[`Map.setMapTypeId`]~~, `maptypeid_changed`                |
-| ~~`[(gmStreetView)]`~~     | [`MapOptions.streetView`]     | ~~[`Map.getStreetView`]~~, ~~[`Map.setStreetView`]~~, `streetview_changed`             |
-| ~~`[(gmTilt)]`~~           | [`MapOptions.tilt`]           | ~~[`Map.getTilt`]~~, ~~[`Map.setTilt`]~~, [`Map.tilt_changed`]                         |
-| `[(gmZoom)]`               | [`MapOptions.zoom`]           | ~~[`Map.getZoom`]~~, ~~[`Map.setZoom`]~~, [`Map.zoom_changed`]                         |
-| not needed                 |                               | [`Map.fitBounds`]                                                                      |
-| ~~`(gmBoundsChange)`~~     |                               | [`Map.getBounds`], [`Map.bounds_changed`]                                              |
-| not needed                 |                               | [`Map.getDiv`]                                                                         |
-| ~~`(gmProjectionChange)`~~ |                               | [`Map.getProjection`], [`Map.projection_changed`]                                      |
-| not needed                 |                               | [`Map.panBy`]                                                                          |
-| not needed                 |                               | [`Map.panTo`]                                                                          |
-| not needed                 |                               | [`Map.panToBounds`]                                                                    |
-| `(gmClick)`                |                               | [`Map.click`]                                                                          |
-| `(gmDblclick)`             |                               | [`Map.dblclick`]                                                                       |
+| Directive                  | [`MapOptions`]                | [`Map`]                                                                                          |
+| :------------------------- | :---------------------------- | :----------------------------------------------------------------------------------------------- |
+| `[(gmCenter)]`             | [`MapOptions.center`]         | ~~[`Map.getCenter`]~~<br /> ~~[`Map.setCenter`]~~<br /> [`Map.center_changed`]                   |
+| ~~`[(gmClickableIcons)]`~~ | [`MapOptions.clickableIcons`] | ~~[`Map.getClickableIcons`]~~<br /> ~~[`Map.setClickableIcons`]~~<br /> `clickableicons_changed` |
+| `[(gmDraggable)]`          | [`MapOptions.draggable`]      | `draggable_change`                                                                               |
+| ~~`[(gmHeading)]`~~        | [`MapOptions.heading`]        | ~~[`Map.getHeading`]~~<br /> ~~[`Map.setHeading`]~~<br /> [`Map.heading_changed`]                |
+| ~~`[(gmMapTypeId)]`~~      | [`MapOptions.mapTypeId`]      | ~~[`Map.getMapTypeId`]~~<br /> ~~[`Map.setMapTypeId`]~~<br /> `maptypeid_changed`                |
+| ~~`[(gmStreetView)]`~~     | [`MapOptions.streetView`]     | ~~[`Map.getStreetView`]~~<br /> ~~[`Map.setStreetView`]~~<br /> `streetview_changed`             |
+| ~~`[(gmTilt)]`~~           | [`MapOptions.tilt`]           | ~~[`Map.getTilt`]~~<br /> ~~[`Map.setTilt`]~~<br /> [`Map.tilt_changed`]                         |
+| `[(gmZoom)]`               | [`MapOptions.zoom`]           | ~~[`Map.getZoom`]~~<br /> ~~[`Map.setZoom`]~~<br /> [`Map.zoom_changed`]                         |
+| not needed                 |                               | [`Map.fitBounds`]                                                                                |
+| ~~`(gmBoundsChange)`~~     |                               | [`Map.getBounds`]<br /> [`Map.bounds_changed`]                                                   |
+| not needed                 |                               | [`Map.getDiv`]                                                                                   |
+| ~~`(gmProjectionChange)`~~ |                               | [`Map.getProjection`]<br /> [`Map.projection_changed`]                                           |
+| not needed                 |                               | [`Map.panBy`]                                                                                    |
+| not needed                 |                               | [`Map.panTo`]                                                                                    |
+| not needed                 |                               | [`Map.panToBounds`]                                                                              |
+| `(gmClick)`                |                               | [`Map.click`]                                                                                    |
+| `(gmDblclick)`             |                               | [`Map.dblclick`]                                                                                 |
 
 ## `gmControl=""`
 
