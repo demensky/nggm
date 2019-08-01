@@ -42,8 +42,7 @@ import {GmCommonModule, GmMapModule} from 'nggm';
 
 ### API
 
-You can use **any** [`google.maps.Map`][map] methods with [template reference
-variables].
+You can use **any** [`Map`] methods with [template reference variables].
 
 [template reference variables]:
     https://angular.io/guide/template-syntax#template-reference-variables-var
@@ -55,8 +54,7 @@ variables].
 
 #### Tokens
 
--   `GM_MAP_OPTIONS` - provide default [`MapOptions`][map-options] in
-    [`Map`][map] constructor.
+-   `GM_MAP_OPTIONS` - provide default [`MapOptions`] in [`Map`] constructor.
 
 #### Directives
 
@@ -64,26 +62,25 @@ variables].
 
 <!-- TODO: all options -->
 
-| Directive                  | [`MapOptions`][map-options]                     | [`Map`][map]                                                                                                                     |
-| :------------------------- | :---------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| `[(gmCenter)]`             | [`center`][map-options.center]                  | ~~[`getCenter`][map.get-center]~~, ~~[`setCenter`][map.set-center]~~, [`center_changed`][map.center_changed]                     |
-| ~~`[(gmClickableIcons)]`~~ | [`clickableIcons`][map-options.clickable-icons] | ~~[`getClickableIcons`][map.get-clickable-icons]~~, ~~[`setClickableIcons`][map.set-clickable-icons]~~, `clickableicons_changed` |
-| `[(gmDraggable)]`          | [`draggable`][map-options.draggable]            | `draggable_change`                                                                                                               |
-| ~~`[(gmHeading)]`~~        | [`heading`][map-options.heading]                | ~~[`getHeading`][map.get-heading]~~, ~~[`setHeading`][map.set-heading]~~, [`heading_changed`][map.heading_changed]               |
-| ~~`[(gmMapTypeId)]`~~      | [`mapTypeId`][map-options.map-type-id]          | ~~[`getMapTypeId`][map.get-map-type-id]~~, ~~[`setMapTypeId`][map.set-map-type-id]~~, `maptypeid_changed`                        |
-| ~~`[(gmStreetView)]`~~     | [`streetView`][map-options.street-view]         | ~~[`getStreetView`][map.get-street-view]~~, ~~[`setStreetView`][map.set-street-view]~~, `streetview_changed`                     |
-| ~~`[(gmTilt)]`~~           | [`tilt`][map-options.tilt]                      | ~~[`getTilt`][map.get-tilt]~~, ~~[`setTilt`][map.set-tilt]~~, [`tilt_changed`][map.tilt_changed]                                 |
-| `[(gmZoom)]`               | [`zoom`][map-options.zoom]                      | ~~[`getZoom`][map.get-zoom]~~, ~~[`setZoom`][map.set-zoom]~~, [`zoom_changed`][map.zoom_changed]                                 |
-| not needed                 |                                                 | [`fitBounds`][map.fit-bounds]                                                                                                    |
-| ~~`(gmBoundsChange)`~~     |                                                 | [`getBounds`][map.fit-bounds], [`bounds_changed`][map.bounds_changed]                                                            |
-| not needed                 |                                                 | [`getDiv`][map.get-div]                                                                                                          |
-| ~~`(gmProjectionChange)`~~ |                                                 | [`getProjection`][map.get-projection], [`projection_changed`][map.projection_changed]                                            |
-| not needed                 |                                                 | [`panBy`][map.pan-by]                                                                                                            |
-| not needed                 |                                                 | [`panTo`][map.pan-to]                                                                                                            |
-| not needed                 |                                                 | [`panToBounds`][map.pan-to-bounds]                                                                                               |
-| `(gmClick)`                |                                                 | [`click`][map.click]                                                                                                             |
-| `(gmDblclick)`             |                                                 | [`dblclick`][map.dblclick]                                                                                                       |
-
+| Directive                  | [`MapOptions`]                | [`Map`]                                                                                |
+| :------------------------- | :---------------------------- | :------------------------------------------------------------------------------------- |
+| `[(gmCenter)]`             | [`MapOptions.center`]         | ~~[`Map.getCenter`]~~, ~~[`Map.setCenter`]~~, [`Map.center_changed`]                   |
+| ~~`[(gmClickableIcons)]`~~ | [`MapOptions.clickableIcons`] | ~~[`Map.getClickableIcons`]~~, ~~[`Map.setClickableIcons`]~~, `clickableicons_changed` |
+| `[(gmDraggable)]`          | [`MapOptions.draggable`]      | `draggable_change`                                                                     |
+| ~~`[(gmHeading)]`~~        | [`MapOptions.heading`]        | ~~[`Map.getHeading`]~~, ~~[`Map.setHeading`]~~, [`Map.heading_changed`]                |
+| ~~`[(gmMapTypeId)]`~~      | [`MapOptions.mapTypeId`]      | ~~[`Map.getMapTypeId`]~~, ~~[`Map.setMapTypeId`]~~, `maptypeid_changed`                |
+| ~~`[(gmStreetView)]`~~     | [`MapOptions.streetView`]     | ~~[`Map.getStreetView`]~~, ~~[`Map.setStreetView`]~~, `streetview_changed`             |
+| ~~`[(gmTilt)]`~~           | [`MapOptions.tilt`]           | ~~[`Map.getTilt`]~~, ~~[`Map.setTilt`]~~, [`Map.tilt_changed`]                         |
+| `[(gmZoom)]`               | [`MapOptions.zoom`]           | ~~[`Map.getZoom`]~~, ~~[`Map.setZoom`]~~, [`Map.zoom_changed`]                         |
+| not needed                 |                               | [`Map.fitBounds`]                                                                      |
+| ~~`(gmBoundsChange)`~~     |                               | [`Map.getBounds`], [`Map.bounds_changed`]                                              |
+| not needed                 |                               | [`Map.getDiv`]                                                                         |
+| ~~`(gmProjectionChange)`~~ |                               | [`Map.getProjection`], [`Map.projection_changed`]                                      |
+| not needed                 |                               | [`Map.panBy`]                                                                          |
+| not needed                 |                               | [`Map.panTo`]                                                                          |
+| not needed                 |                               | [`Map.panToBounds`]                                                                    |
+| `(gmClick)`                |                               | [`Map.click`]                                                                          |
+| `(gmDblclick)`             |                               | [`Map.dblclick`]                                                                       |
 
 ## `gmControl=""`
 
@@ -109,167 +106,167 @@ Not implemented
 
 Not implemented
 
-[map]:
+[`map`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map
-[map.fit-bounds]:
+[`map.fitbounds`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.fitBounds
-[map.get-bounds]:
+[`map.getbounds`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.getBounds
-[map.get-center]:
+[`map.getcenter`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.getCenter
-[map.get-clickable-icons]:
+[`map.getclickableicons`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.getClickableIcons
-[map.get-div]:
+[`map.getdiv`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.getDiv
-[map.get-heading]:
+[`map.getheading`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.getHeading
-[map.get-map-type-id]:
+[`map.getmaptypeid`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.getMapTypeId
-[map.get-projection]:
+[`map.getprojection`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.getProjection
-[map.get-street-view]:
+[`map.getstreetview`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.getStreetView
-[map.get-tilt]:
+[`map.gettilt`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.getTilt
-[map.get-zoom]:
+[`map.getzoom`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.getZoom
-[map.pan-by]:
+[`map.panby`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.panBy
-[map.pan-to]:
+[`map.panto`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.panTo
-[map.pan-to-bounds]:
+[`map.pantobounds`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.panToBounds
-[map.set-center]:
+[`map.setcenter`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.setCenter
-[map.set-clickable-icons]:
+[`map.setclickableicons`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.setClickableIcons
-[map.set-heading]:
+[`map.setheading`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.setHeading
-[map.set-map-type-id]:
+[`map.setmaptypeid`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.setMapTypeId
-[map.set-options]:
+[`map.setoptions`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.setOptions
-[map.set-street-view]:
+[`map.setstreetview`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.setStreetView
-[map.set-tilt]:
+[`map.settilt`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.setTilt
-[map.set-zoom]:
+[`map.setzoom`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.setZoom
-[map.controls]:
+[`map.controls`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.controls
-[map.data]:
+[`map.data`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.data
-[map.map-types]:
+[`map.maptypes`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.mapTypes
-[map.overlay-map-types]:
+[`map.overlaymaptypes`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.overlayMapTypes
-[map.bounds_changed]:
+[`map.bounds_changed`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.bounds_changed
-[map.center_changed]:
+[`map.center_changed`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.center_changed
-[map.click]:
+[`map.click`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.click
-[map.dblclick]:
+[`map.dblclick`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.dblclick
-[map.drag]:
+[`map.drag`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.drag
-[map.dragend]:
+[`map.dragend`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.dragend
-[map.dragstart]:
+[`map.dragstart`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.dragstart
-[map.heading_changed]:
+[`map.heading_changed`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.heading_changed
-[map.idle]:
+[`map.idle`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.idle
-[map.maptypeid_changed]:
+[`map.maptypeid_changed`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.maptypeid_changed
-[map.mousemove]:
+[`map.mousemove`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.mousemove
-[map.mouseout]:
+[`map.mouseout`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.mouseout
-[map.mouseover]:
+[`map.mouseover`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.mouseover
-[map.projection_changed]:
+[`map.projection_changed`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.projection_changed
-[map.rightclick]:
+[`map.rightclick`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.rightclick
-[map.tilesloaded]:
+[`map.tilesloaded`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.tilesloaded
-[map.tilt_changed]:
+[`map.tilt_changed`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.tilt_changed
-[map.zoom_changed]:
+[`map.zoom_changed`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#Map.zoom_changed
-[map-options]:
+[`mapoptions`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions
-[map-options.background-color]:
+[`mapoptions.backgroundcolor`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.backgroundColor
-[map-options.center]:
+[`mapoptions.center`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.center
-[map-options.clickable-icons]:
+[`mapoptions.clickableicons`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.clickableIcons
-[map-options.control-size]:
+[`mapoptions.controlsize`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.controlSize
-[map-options.disable-default-u-i]:
+[`mapoptions.disabledefaultui`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.disableDefaultUI
-[map-options.disable-double-click-zoom]:
+[`mapoptions.disabledoubleclickzoom`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.disableDoubleClickZoom
-[map-options.draggable]:
+[`mapoptions.draggable`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.draggable
-[map-options.draggable-cursor]:
+[`mapoptions.draggablecursor`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.draggableCursor
-[map-options.dragging-cursor]:
+[`mapoptions.draggingcursor`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.draggingCursor
-[map-options.fullscreen-control]:
+[`mapoptions.fullscreencontrol`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.fullscreenControl
-[map-options.fullscreen-control-options]:
+[`mapoptions.fullscreencontroloptions`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.fullscreenControlOptions
-[map-options.gesture-handling]:
+[`mapoptions.gesturehandling`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.gestureHandling
-[map-options.heading]:
+[`mapoptions.heading`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.heading
-[map-options.keyboard-shortcuts]:
+[`mapoptions.keyboardshortcuts`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.keyboardShortcuts
-[map-options.map-type-control]:
+[`mapoptions.maptypecontrol`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.mapTypeControl
-[map-options.map-type-control-options]:
+[`mapoptions.maptypecontroloptions`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.mapTypeControlOptions
-[map-options.map-type-id]:
+[`mapoptions.maptypeid`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.mapTypeId
-[map-options.max-zoom]:
+[`mapoptions.maxzoom`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.maxZoom
-[map-options.min-zoom]:
+[`mapoptions.minzoom`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.minZoom
-[map-options.no-clear]:
+[`mapoptions.noclear`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.noClear
-[map-options.pan-control]:
+[`mapoptions.pancontrol`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.panControl
-[map-options.pan-control-options]:
+[`mapoptions.pancontroloptions`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.panControlOptions
-[map-options.restriction]:
+[`mapoptions.restriction`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.restriction
-[map-options.rotate-control]:
+[`mapoptions.rotatecontrol`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.rotateControl
-[map-options.rotate-control-options]:
+[`mapoptions.rotatecontroloptions`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.rotateControlOptions
-[map-options.scale-control]:
+[`mapoptions.scalecontrol`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.scaleControl
-[map-options.scale-control-options]:
+[`mapoptions.scalecontroloptions`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.scaleControlOptions
-[map-options.scrollwheel]:
+[`mapoptions.scrollwheel`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.scrollwheel
-[map-options.street-view]:
+[`mapoptions.streetview`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.streetView
-[map-options.street-view-control]:
+[`mapoptions.streetviewcontrol`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.streetViewControl
-[map-options.street-view-control-options]:
+[`mapoptions.streetviewcontroloptions`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.streetViewControlOptions
-[map-options.styles]:
+[`mapoptions.styles`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.styles
-[map-options.tilt]:
+[`mapoptions.tilt`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.tilt
-[map-options.zoom]:
+[`mapoptions.zoom`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.zoom
-[map-options.zoom-control]:
+[`mapoptions.zoomcontrol`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.zoomControl
-[map-options.zoom-control-options]:
+[`mapoptions.zoomcontroloptions`]:
     https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions.zoomControlOptions
