@@ -5,6 +5,14 @@ Just [Maps JavaScript API][maps-js-api] wrapper for use with Angular.
 [maps-js-api]:
     https://developers.google.com/maps/documentation/javascript/reference/
 
+## Examples
+
+-   [Adding Controls to the Map](https://stackblitz.com/edit/nggm-controls?file=src%2Fapp%2Fapp.component.html).
+
+-   [Marker directives](https://stackblitz.com/edit/nggm-marker?file=src%2Fapp%2Fapp.component.html).
+
+-   TODO…
+
 ## Setup
 
 1.  Install
