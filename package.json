@@ -1,61 +1,59 @@
 {
-    "name": "nggm",
-    "version": "0.0.10",
-    "scripts": {
-        "ng": "ng",
-        "start": "ng serve",
-        "build": "ng build",
-        "lint": "ng lint",
-        "e2e": "ng e2e"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/demensky/nggm.git"
-    },
-    "keywords": [
-        "ng",
-        "angular",
-        "googlemaps",
-        "google",
-        "maps"
-    ],
-    "homepage": "https://github.com/demensky/nggm",
-    "bugs": {
-        "url": "https://github.com/demensky/nggm/issues"
-    },
-    "license": "MIT",
-    "author": {
-        "name": "Dmitry Demensky",
-        "email": "dmitry@demensky.com",
-        "url": "https://demensky.github.io/"
-    },
-    "dependencies": {
-        "@types/googlemaps": "^3.37.0"
-    },
-    "peerDependencies": {
-        "@angular/core": "^8.1.2"
-    },
-    "devDependencies": {
-        "@angular-devkit/build-angular": "~0.801.2",
-        "@angular-devkit/build-ng-packagr": "~0.801.2",
-        "@angular/cli": "~8.1.2",
-        "@angular/common": "^8.1.3",
-        "@angular/compiler": "~8.1.2",
-        "@angular/compiler-cli": "~8.1.2",
-        "@angular/core": "^8.1.2",
-        "@angular/language-service": "~8.1.2",
-        "@angular/platform-browser": "~8.1.2",
-        "@angular/platform-browser-dynamic": "~8.1.2",
-        "@types/node": "~8.9.4",
-        "codelyzer": "^5.0.0",
-        "ng-packagr": "^5.1.0",
-        "prettier": "^1.18.2",
-        "rxjs": "~6.4.0",
-        "ts-node": "~7.0.0",
-        "tsickle": "^0.35.0",
-        "tslib": "^1.9.0",
-        "tslint": "~5.15.0",
-        "typescript": "~3.4.3",
-        "zone.js": "~0.9.1"
-    }
+  "name": "nggm",
+  "version": "0.0.10",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/demensky/nggm.git"
+  },
+  "keywords": [
+    "ng",
+    "angular",
+    "googlemaps",
+    "google",
+    "maps"
+  ],
+  "homepage": "https://github.com/demensky/nggm",
+  "bugs": {
+    "url": "https://github.com/demensky/nggm/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Dmitry Demensky",
+    "email": "dmitry@demensky.com",
+    "url": "https://demensky.github.io/"
+  },
+  "dependencies": {
+    "@types/googlemaps": "^3.37.4"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.802.2",
+    "@angular-devkit/build-ng-packagr": "~0.802.2",
+    "@angular/cli": "~8.2.2",
+    "@angular/common": "^8.2.2",
+    "@angular/compiler": "~8.2.2",
+    "@angular/compiler-cli": "~8.2.2",
+    "@angular/core": "^8.2.2",
+    "@angular/language-service": "~8.2.2",
+    "@angular/platform-browser": "~8.2.2",
+    "@angular/platform-browser-dynamic": "~8.2.2",
+    "@types/node": "~12.7.2",
+    "codelyzer": "^5.0.0",
+    "ng-packagr": "^5.5.0",
+    "prettier": "^1.18.2",
+    "rxjs": "~6.5.2",
+    "ts-node": "~8.3.0",
+    "tsickle": "^0.36.0",
+    "tslib": "^1.9.0",
+    "tslint": "~5.18.0",
+    "typescript": "~3.5.3",
+    "zone.js": "~0.10.2"
+  }
 }
