@@ -9,7 +9,7 @@ export class GmOpacityDirective {
         this.gmOpacityChange.next(value);
     }
 
-    @Output() private readonly gmOpacityChange: MvcValueObservable<number>;
+    @Output() public readonly gmOpacityChange: MvcValueObservable<number>;
 
     public constructor(
         @Inject(GM_OPACITY_ACCESSOR) @Self() target: google.maps.MVCObject,
